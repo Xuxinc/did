@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>D-ID 数字人演示</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #did-container {
+      width: 640px;
+      height: 480px;
+      border: 2px solid #ccc;
+      background-color: #000;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>D-ID 数字人展示</h1>
+  <div id="did-container"></div>
+
+  <!-- 嵌入 D-ID 数字人脚本 -->
+  <script type="module"
+      src="https://agent.d-id.com/v2/index.js"
+      data-mode="full"
+      data-client-key="Z29vZ2xlLW9hdXRoMnwxMDIzMjE1ODU2NDc3ODA3MTQyNTI6TU5tV0NSS1Y2N2EybVRwZ0x0cmFT"
+      data-agent-id="v2_agt_cCHaTU_9"
+      data-name="did-agent"
+      data-monitor="true"
+      data-target-id="did-container">
+  </script>
+
+</body>
+</html>
